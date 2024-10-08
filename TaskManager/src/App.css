@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #0e86d4;
+  --secondary-color: #003060;
+  --background-color: rgb(0, 60, 94); /* Adjusted dark background color */
+  --accent-color: #055c9d;
+  --font-color: #050000; /* Set to white to ensure visibility on dark background */
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color); /* Use this variable for text color */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--font-color); /* Ensure headings are also visible */
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: red;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #004085;
+}
+
+button:disabled {
+  background-color: var(--secondary-color);
+  cursor: not-allowed;
+}
+
+a:focus, button:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+}
