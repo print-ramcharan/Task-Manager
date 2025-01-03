@@ -5,13 +5,13 @@ import { getDatabase } from "firebase/database";  // Import Realtime Database
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA270UmSGy1RHoSSblxO43u386MuxCFpdE",
-  authDomain: "task-manager-b67d4.firebaseapp.com",
-  databaseURL: 'https://task-manager-b67d4-default-rtdb.asia-southeast1.firebasedatabase.app', 
-  projectId: "task-manager-b67d4",
-  storageBucket: "task-manager-b67d4.appspot.com",
-  messagingSenderId: "772239394828",
-  appId: "1:772239394828:web:d187edac5c2d8eb6ae0629"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: '', 
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 // Initialize Firebase
